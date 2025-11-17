@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abhishek Dewangan — MERN Stack Software Developer</title>
+  <meta name="description" content="Portfolio of Abhishek Dewangan — MERN Stack developer. Projects, skills, contact and resume." />
+
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+
+  <style>
+    :root{--accent:#0ea5a4}
+    html,body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
+    .glass{background:rgba(255,255,255,0.6);backdrop-filter:blur(6px)}
+    .dark .glass{background:rgba(17,24,39,0.5)}
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-800 text-slate-800 dark:text-slate-100">
+  <header class="fixed w-full z-40">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-br from-emerald-400 to-teal-500 text-white font-bold">AD</div>
+        <div class="hidden sm:block">
+          <div class="text-sm font-semibold">Abhishek Dewangan</div>
+          <div class="text-xs text-slate-500 dark:text-slate-400">MERN Stack Developer</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#skills" class="hover:underline">Skills</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <a class="inline-flex items-center gap-2 bg-emerald-500 text-white px-3 py-2 rounded-lg shadow" href="#contact"><i class="fa fa-envelope"></i> Hire Me</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button id="themeToggle" class="p-2 rounded-md glass" title="Toggle theme">🌙</button>
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md glass">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white/60 dark:bg-slate-900/60 glass backdrop-blur-sm">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-3">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-28">
+    <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="text-sm text-emerald-600 font-semibold">Hi — I build web apps</p>
+        <h1 class="mt-3 text-4xl sm:text-5xl font-extrabold leading-tight">Abhishek Dewangan<br/><span class="text-emerald-500">MERN Stack Software Developer</span></h1>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 max-w-xl">I design and ship full-stack applications using MongoDB, Express, React and Node.js. I focus on clean architecture, performant UIs, and shipping production-ready code.</p>
+
+        <div class="mt-6 flex gap-3">
+          <a href="#projects" class="inline-flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-lg">See my work</a>
+          <a href="#contact" class="inline-flex items-center gap-2 border border-slate-300 px-4 py-2 rounded-lg">Get in touch</a>
+          <a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg glass">Download Resume</a>
+        </div>
+
+        <div class="mt-8 flex items-center gap-6">
+          <!-- Socials (replace links) -->
+          <a aria-label="GitHub" href="#" class="text-2xl"><i class="fab fa-github"></i></a>
+          <a aria-label="LinkedIn" href="#" class="text-2xl"><i class="fab fa-linkedin"></i></a>
+          <a aria-label="Twitter" href="#" class="text-2xl"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="w-full h-80 md:h-96 rounded-2xl glass p-6 flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex items-center justify-between">
+              <div>
+                <div class="text-xs text-slate-500">Building:</div>
+                <div class="text-lg font-semibold">Full-stack task manager</div>
+              </div>
+              <div class="text-xs text-slate-400">React • Node • MongoDB</div>
+            </div>
+
+            <div class="mt-6 text-sm text-slate-600 dark:text-slate-300">
+              <p>Example project: A collaborative task management app with real-time updates, authentication, and role-based permissions.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="flex-1 text-xs text-slate-500">Highlights</div>
+            <div class="px-3 py-1 bg-slate-100 rounded-full text-xs">TypeScript</div>
+            <div class="px-3 py-1 bg-slate-100 rounded-full text-xs">Socket.IO</div>
+          </div>
+        </div>
+
+        <!-- decorative code block -->
+        <pre class="absolute -bottom-6 left-6 w-64 rounded-lg shadow-lg bg-slate-800 text-slate-100 p-4 text-xs font-mono">{
+  "name": "task-manager",
+  "stack": "MERN",
+  "features": ["auth","realtime","roles"]
+}</pre>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-12">
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+        <div class="md:col-span-2">
+          <h2 class="text-2xl font-bold">About me</h2>
+          <p class="mt-4 text-slate-600 dark:text-slate-300">I'm a MERN stack developer building scalable web applications. I enjoy turning product ideas into polished user experiences. I work on backend APIs, frontend SPAs with React, and database modeling with MongoDB.</p>
+
+          <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <li class="p-4 glass rounded-md">
+              <div class="text-sm font-semibold">Experience</div>
+              <div class="text-xs text-slate-500">3+ years building web apps</div>
+            </li>
+            <li class="p-4 glass rounded-md">
+              <div class="text-sm font-semibold">Preferred stack</div>
+              <div class="text-xs text-slate-500">MongoDB · Express · React · Node</div>
+            </li>
+            <li class="p-4 glass rounded-md">
+              <div class="text-sm font-semibold">Open to</div>
+              <div class="text-xs text-slate-500">Freelance & full-time roles</div>
+            </li>
+            <li class="p-4 glass rounded-md">
+              <div class="text-sm font-semibold">Location</div>
+              <div class="text-xs text-slate-500">India</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-2xl glass">
+          <h3 class="text-sm font-semibold">Contact</h3>
+          <p class="mt-2 text-xs text-slate-500">Email</p>
+          <a href="mailto:abhishek@example.com" class="block mt-1 font-medium">abhishek@example.com</a>
+          <p class="mt-3 text-xs text-slate-500">Phone</p>
+          <div class="mt-1">+91 98765 43210</div>
+
+          <div class="mt-6">
+            <a href="#contact" class="inline-flex items-center gap-2 px-3 py-2 bg-emerald-500 text-white rounded">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-12">
+      <h2 class="text-2xl font-bold">Selected projects</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <!-- Project 1 -->
+        <article class="p-4 rounded-lg glass shadow">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="font-semibold">Realtime Task Manager</h3>
+              <div class="text-xs text-slate-500">React · Node · Socket.IO</div>
+            </div>
+            <div class="text-xs">2024</div>
+          </div>
+          <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">A collaborative app to create, assign, and track tasks with live updates and mentions.</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-sm underline">Live</a>
+            <a href="#" class="text-sm underline">Source</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="p-4 rounded-lg glass shadow">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="font-semibold">E‑commerce Boilerplate</h3>
+              <div class="text-xs text-slate-500">MERN · Stripe</div>
+            </div>
+            <div class="text-xs">2023</div>
+          </div>
+          <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">Ready-to-launch e-commerce starter with product management, cart, and Stripe integration.</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-sm underline">Live</a>
+            <a href="#" class="text-sm underline">Source</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="p-4 rounded-lg glass shadow">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="font-semibold">Devfolio CMS</h3>
+              <div class="text-xs text-slate-500">Next.js · MongoDB</div>
+            </div>
+            <div class="text-xs">2022</div>
+          </div>
+          <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">A minimal CMS for developers to host blogs and project pages with markdown support.</p>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="text-sm underline">Live</a>
+            <a href="#" class="text-sm underline">Source</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-12">
+      <h2 class="text-2xl font-bold">Skills & Tools</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-lg glass">
+          <h3 class="font-semibold">Core</h3>
+          <ul class="mt-4 grid grid-cols-2 gap-2 text-sm text-slate-600 dark:text-slate-300">
+            <li>JavaScript / TypeScript</li>
+            <li>React / Next.js</li>
+            <li>Node.js / Express</li>
+            <li>MongoDB / Mongoose</li>
+            <li>REST & GraphQL</li>
+            <li>Socket.IO / WebSockets</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg glass">
+          <h3 class="font-semibold">Tools</h3>
+          <ul class="mt-4 grid grid-cols-2 gap-2 text-sm text-slate-600 dark:text-slate-300">
+            <li>Git / GitHub</li>
+            <li>Docker</li>
+            <li>Jest / Testing Library</li>
+            <li>Vercel / Heroku</li>
+            <li>Postman</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-12">
+      <h2 class="text-2xl font-bold">Contact</h2>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">Interested in working together? Send me a message.</p>
+
+      <div class="mt-6 grid md:grid-cols-2 gap-8">
+        <form class="p-6 rounded-lg glass" action="mailto:abhishek@example.com" method="post" enctype="text/plain">
+          <label class="block text-sm">Name</label>
+          <input class="w-full mt-2 p-2 rounded border border-slate-200" name="name" required />
+
+          <label class="block text-sm mt-4">Email</label>
+          <input type="email" class="w-full mt-2 p-2 rounded border border-slate-200" name="email" required />
+
+          <label class="block text-sm mt-4">Message</label>
+          <textarea class="w-full mt-2 p-2 rounded border border-slate-200" name="message" rows="5" required></textarea>
+
+          <div class="mt-4">
+            <button type="submit" class="px-4 py-2 rounded bg-emerald-500 text-white">Send</button>
+          </div>
+        </form>
+
+        <div class="p-6 rounded-lg glass">
+          <h3 class="font-semibold">Other ways to reach me</h3>
+          <ul class="mt-4 text-sm text-slate-600 dark:text-slate-300">
+            <li>Email: <a href="mailto:abhishek@example.com" class="underline">abhishek@example.com</a></li>
+            <li>GitHub: <a href="#" class="underline">github.com/abhishek</a></li>
+            <li>LinkedIn: <a href="#" class="underline">linkedin.com/in/abhishek</a></li>
+          </ul>
+
+          <div class="mt-6">
+            <div class="text-xs text-slate-500">Availability</div>
+            <div class="mt-1">Open to new opportunities · Remote friendly</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="max-w-6xl mx-auto px-6 py-8 text-sm text-slate-500">
+      <div class="flex items-center justify-between">
+        <div>© <span id="year"></span> Abhishek Dewangan</div>
+        <div>Made with ❤️ · MERN</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    function setTheme(isDark){
+      document.documentElement.classList.toggle('dark', isDark);
+      themeToggle.textContent = isDark ? '☀️' : '🌙';
+    }
+    // read saved preference
+    const saved = localStorage.getItem('theme-dark');
+    setTheme(saved === '1');
+    themeToggle.addEventListener('click', ()=>{ const is = !document.documentElement.classList.contains('dark'); setTheme(is); localStorage.setItem('theme-dark', is ? '1':'0'); });
+
+    // mobile menu
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
+
+    // smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const href = this.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({behavior:'smooth', block:'start'});
+          if(!mobileMenu.classList.contains('hidden')) mobileMenu.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
